@@ -1,0 +1,195 @@
+.hero {
+  background: url(assets/about/mobile/image-hero-whitecup.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  color: var(--light-cream);
+  padding: 10rem 2.5rem 8rem;
+}
+.hero__title {
+  font-size: 3rem;
+}
+
+.commitment__img {
+  background: url(../about/mobile/image-commitment.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 1rem;
+  width: auto;
+  height: 400px;
+  margin-bottom: 4rem;
+}
+
+.commitment__title {
+  margin-bottom: 3rem;
+  font-size: 3.2rem;
+}
+.commitment__description {
+  color: var(--dark-gray);
+  opacity: 0.8;
+}
+
+/* Quality */
+.quality {
+  position: relative;
+  margin-top: 17rem;
+  background: var(--footer-background);
+  color: var(--light-cream) !important;
+  border-radius: 1rem;
+  padding: 12rem 2.5rem 7rem;
+}
+.quality__img {
+  background: url(../about/mobile/image-quality.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  width: 80%;
+  height: 15rem;
+}
+.quality__title {
+  color: var(--light-cream);
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.quality__description {
+  opacity: 0.8;
+}
+
+/* Location */
+.location__title {
+  color: var(--light-gray);
+  margin-bottom: 6rem;
+}
+.location__card {
+  margin-bottom: 6rem;
+}
+.location__card-img {
+  margin-bottom: 5rem;
+}
+.location__card-title {
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+}
+.location__card-description {
+  color: var(--dark-gray);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background: url(../about/tablet/image-hero-whitecup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 5.5rem;
+  }
+  .hero__title {
+    font-size: 4rem;
+  }
+  .hero__description {
+    margin-bottom: 0;
+  }
+
+  .commitment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .commitment__img {
+    width: 40%;
+    height: 45rem;
+    margin-bottom: 0;
+    background-position: bottom left;
+  }
+  .commitment__details {
+    width: 50%;
+  }
+
+  .quality {
+    padding: 20rem 7rem 8rem;
+    margin-top: 28rem;
+  }
+  .quality__img {
+    background: url(../about/tablet/image-quality.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 32rem;
+  }
+  .quality__details {
+    text-align: center;
+  }
+  .quality__title {
+    font-size: 3.2rem;
+  }
+
+  .location__card__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .location__card {
+    width: 33%;
+    margin-bottom: 0;
+  }
+  .location__card:nth-of-type(2) {
+    width: 30%;
+  }
+  .location__card-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background: url(../about/desktop/image-hero-whitecup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 11.5rem 8.5rem;
+  }
+  .hero__title {
+    font-size: 5rem;
+  }
+
+  .commitment {
+    justify-content: space-around;
+  }
+  .commitment__img {
+    width: 33%;
+    height: 50rem;
+  }
+  .commitment__details {
+    width: 45%;
+  }
+
+  .quality {
+    display: flex;
+    padding: 8.5rem 8.5rem 15.5rem;
+  }
+  .quality__img {
+    background: url(../about/desktop/image-quality.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    top: 0%;
+    right: 0;
+    transform: translate(0, -18%);
+    width: 35%;
+    height: 47rem;
+    /* margin-left: 6%; */
+  }
+  .quality__details {
+    text-align: start;
+    width: 50%;
+  }
+  .quality__title {
+    font-size: 4rem;
+  }
+  .location__card-title {
+    font-size: 3.2rem;
+  }
+}
