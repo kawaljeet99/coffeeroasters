@@ -1,0 +1,55 @@
+.hero {
+  background: url(../plan/mobile/image-hero-blackcup.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  color: var(--light-cream);
+  padding: 10rem 2.5rem 8rem;
+}
+.explainer {
+  background-color: var(--footer-background);
+  padding: 8rem 1rem;
+  border-radius: 1rem;
+}
+.explainer__card {
+  margin-bottom: 6rem;
+}
+.explainer__card--title,
+.explainer__card--description {
+  color: var(--light-cream);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background: url(../plan/tablet/image-hero-blackcup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12rem 5.5rem;
+  }
+  .hero__description {
+    margin-bottom: 0;
+  }
+  .explainer {
+    padding: 10rem 4rem;
+  }
+  .explainer__card {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background: url(../plan/desktop/image-hero-blackcup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12rem 8.5rem;
+  }
+
+  .explainer {
+    padding: 10rem 8.5rem;
+  }
+  .explainer__card--description {
+    width: 75%;
+  }
+}

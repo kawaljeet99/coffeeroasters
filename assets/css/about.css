@@ -1,5 +1,5 @@
 .hero {
-  background: url(assets/about/mobile/image-hero-whitecup.jpg);
+  background: url(../about/mobile/image-hero-whitecup.jpg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -169,7 +169,7 @@
 
   .quality {
     display: flex;
-    padding: 8.5rem 8.5rem 15.5rem;
+    padding: 8.5rem 8.5rem 12.5rem;
   }
   .quality__img {
     background: url(../about/desktop/image-quality.jpg);
@@ -177,10 +177,9 @@
     background-position: right;
     top: 0%;
     right: 0;
-    transform: translate(0, -18%);
-    width: 35%;
+    transform: translate(20%, -18%);
+    width: 33%;
     height: 47rem;
-    /* margin-left: 6%; */
   }
   .quality__details {
     text-align: start;

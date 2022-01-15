@@ -24,6 +24,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -125,10 +126,6 @@ img {
   margin-bottom: 120px;
 }
 
-.hidden {
-  display: none !important;
-}
-
 /* ======= Home Page ======= */
 
 .container {
@@ -159,41 +156,40 @@ img {
   cursor: pointer;
   margin-right: 5px;
 }
-
-/* .nav__list {
-  width: 100%;
-  height: 55rem;
-  position: absolute;
-  top: 80px;
-  left: 0;
-  overflow: hidden;
-  transform: translateY(calc(-100% - 8rem));
-  list-style: none;
-  background: linear-gradient(
-    #ffffff 30%,
-    rgba(254, 252, 247, 0.504981) 55.94%
-  );
-  padding: 4rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3.5rem;
-  transition: all 0.3s ease-in;
-}
-.nav__list.visible {
-  transform: translateY(0);
-}
-
-.nav__link {
-  font-family: "Fraunces", sans-serif;
-  font-weight: 900;
-  font-size: 2.4rem;
-  letter-spacing: 1px;
-  color: var(--dark-gray);
-  text-transform: capitalize;
-} */
-
-.nav__list {
+.nav__menu-close {
   display: none;
+}
+
+@media (max-width: 767px) {
+  .nav__list {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    overflow: hidden;
+    transform: translateY(calc(-100% - 8rem));
+    list-style: none;
+    background: linear-gradient(#ffffff 30%, rgba(254, 252, 247, 0.504981) 55%);
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    transition: all 0.3s ease-in;
+    z-index: 2;
+  }
+  .nav__list.visible {
+    transform: translateY(0);
+  }
+
+  .nav__link {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    color: var(--dark-gray);
+    text-transform: capitalize;
+  }
 }
 
 /* ======= Hero ====== */
@@ -359,6 +355,10 @@ img {
   body {
     text-align: left;
   }
+  .nav__menu-open,
+  .nav__menu-close {
+    display: none !important;
+  }
   .nav__list {
     display: flex;
     justify-content: space-between;
@@ -420,6 +420,7 @@ img {
     gap: 5rem;
     margin-bottom: 5rem;
   }
+
   .collection__img {
     margin-bottom: 0;
   }
@@ -559,6 +560,10 @@ img {
     width: 90%;
     margin: auto;
   }
+  .features__header {
+    height: 520px;
+    margin-bottom: -250px;
+  }
   .feature {
     display: flex;
     flex-direction: column;
@@ -573,6 +578,10 @@ img {
   .feature__details {
     margin-bottom: 0;
     width: 90%;
+  }
+  .feature__header-description {
+    max-width: 50%;
+    margin: auto;
   }
 
   /* explainer */
